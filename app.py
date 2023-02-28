@@ -1,11 +1,8 @@
 import streamlit as st
 import pandas as pd 
-from matplotlib import pyplot as plt
 from plotly import graph_objs as go
 from sklearn.linear_model import LinearRegression
 import numpy as np 
-import yfinance as yf
-
 
 data = pd.read_csv("data//population.csv")
 x = np.array(data['Year']).reshape(-1,1)
